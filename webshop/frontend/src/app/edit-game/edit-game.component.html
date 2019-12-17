@@ -1,0 +1,72 @@
+<div *ngIf="game">
+  <div class="addGameContainer">
+    
+    
+        <div class="box">
+           <div class="box-body" [ngStyle]="{'background-image': 'url(' + game.urlImage + ')'}"></div>
+             <div class="box-footer">
+                  <div class="name">{{game.name}}</div>
+             </div>
+        </div> 
+
+
+
+    <div id="gameProperties">
+        
+      <h2>{{game.name}}`s properties:</h2>
+
+            <form [formGroup]="newGameForm" let formGame = "ngForm">
+
+        <div class="form-container">
+             <div>
+                <label  class="field">Game id</label>
+                <input formControlName="id" type="text" placeholder="{{game._id}}" disabled=true  #gameId>
+            </div>
+
+            <div>
+                <label  class="field">Name</label>
+                <input formControlName="name" type="text" placeholder="{{game.name}}" #name> 
+            </div>
+
+            <div>
+                <label  class="field">Description</label>
+                <input formControlName="description" type="text" placeholder="{{game.description}}"  #description>
+            </div>
+
+            <div>
+                <label  class="field">Image url</label>
+                <input formControlName="urlImage" type="text" placeholder="{{game.urlImage}}"  #urlImage>
+            </div>
+
+            <div>
+                <label  class="field">Unit price</label>
+                <input formControlName="unitPrice" type="number" placeholder="{{game.unitPrice}}"  #unitPrice>
+            </div>
+
+            <div>
+                <label  class="field">Stock</label>
+                <input formControlName="stock" type="number" placeholder="{{game.stock}}"  #stock>
+            </div>
+
+            <div>
+                <label  class="field">Average rating</label>
+                <input formControlName="averageRating" type="number" placeholder="{{game.averageRating}}"  #averageRating>
+            </div>
+
+
+
+            <!--<input value="{{game.id}}" style="display: none" #id >-->
+
+           <button (click)="save( gameId.value, name.value, description.value, urlImage.value, unitPrice.value, stock.value, averageRating.value)">Save</button>
+           
+           <button (click)="goBack()">Back</button>
+
+        </div>
+      </form>
+
+              
+
+     
+    </div>
+</div>
+</div>

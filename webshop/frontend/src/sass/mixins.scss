@@ -1,0 +1,6 @@
+@mixin fontStack($family: 'Open Sans' ){
+	font:
+	{
+		family: $family;
+	}
+}

@@ -1,0 +1,33 @@
+<div class="allGamesContainer">
+<div class="games">
+   <div class="game" *ngFor="let game of games"> 
+     <span *ngIf="game.name != null">
+        <div class="box">
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	            <div class="flipper">
+	              	<div class="front">
+                     <div class="box-body" [ngStyle]="{'background-image': 'url(' + game.urlImage + ')'}"></div>
+	              	</div>
+		              <div class="back">
+	                  <div class="box-body">
+                      <div class="description">{{game.description}}</div>
+                      <div class="description">Price: {{game.unitPrice}}</div>
+                      <div class="description">On stock: {{game.stock}}</div>
+                      <div class="description">Average rating: {{game.averageRating}}</div></div>
+                	</div>
+	            </div>
+          </div>
+             <div class="box-footer">
+                <div class="name"> {{game.name}} </div>
+                <div id="buttons">
+                  <div class="view" (click)="gotoDetail(game._id)"></div>
+                  <div class="delete" (click)= "delete(game._id)"></div>
+                  <div class="edit" (click)="gotoEdit(game._id)"></div>
+                </div>
+              </div>
+        </div> 
+     </span>
+  </div>
+</div>
+</div>
+

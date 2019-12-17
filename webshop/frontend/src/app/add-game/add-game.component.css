@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i);
+.addGameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+  width: 100%;
+  height: 100%; }
+
+.box {
+  display: flex;
+  float: left;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  margin: .5em;
+  padding: 0;
+  height: 15em;
+  width: 15em;
+  border-radius: 4px; }
+
+.box-body {
+  width: 100%;
+  height: 12.5em;
+  border-radius: 4px 4px 0 0;
+  border: 2px solid #8d97ca;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%; }
+
+.text {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia "Times New Roman" Times serif; }
+
+.box-footer {
+  display: flex;
+  align-content: center;
+  font-size: small;
+  color: white;
+  background-color: #3c3f60;
+  line-height: 1em;
+  position: absolute;
+  height: 2.5em;
+  width: 100%;
+  margin-top: 15em;
+  border-radius: 4px; }
+
+#gameProperties {
+  display: flex;
+  flex-direction: column;
+  height: 15em;
+  width: 15em;
+  margin: 1em;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+button {
+  display: flex;
+  justify-content: center;
+  width: 5em;
+  height: 2em;
+  border: 2px solid #3c3f60;
+  background-color: #8d97ca;
+  border-radius: 2px; }
+
+input {
+  width: 100%;
+  height: 2em;
+  border-radius: 3px;
+  border: 1px solid #3c3f60; }
+
+h2 {
+  margin-top: 0px; }
+
+.name {
+  width: 80%;
+  margin: .5em;
+  font-family: Georgia "Times New Roman" Times serif; }
+
+/*# sourceMappingURL=add-game.component.css.map */

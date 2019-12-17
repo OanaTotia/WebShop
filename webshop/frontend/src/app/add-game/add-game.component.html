@@ -1,0 +1,60 @@
+<div class="addGameContainer">
+    
+    
+        <div class="box">
+           <div class="box-body"></div>
+             <div class="box-footer">
+                  <div class="name"></div>
+             </div>
+        </div> 
+
+
+
+    <div id="gameProperties">
+        
+      <h2>Create a new game</h2>
+
+      <form [formGroup]="newGameForm" let formGame = "ngForm">
+
+        <div class="form-container">
+
+            <div>
+                <label  class="field">Name</label>
+                <input class="inputName" formControlName="name" type="text"  #name> 
+            </div>
+
+            <div>
+                <label  class="field">Description</label>
+                <input class="inputDescription" formControlName="description" type="text"  #description>
+            </div>
+
+            <div>
+                <label  class="field">Image url</label>
+                <input class="inputUrl" formControlName="urlImage" type="text"  #urlImage>
+            </div>
+
+            <div>
+                <label  class="field">Unit Price</label>
+                <input class="inputRrice" formControlName="unitPrice" type="number"  #unitPrice>
+            </div>
+
+            <div>
+                <label  class="field">Stock</label>
+                <input class="inputStock" formControlName="stock" type="number"  #stock>
+            </div>
+
+            <div>
+                <label  class="field">Average Rating</label>
+                <input class="inputStock" formControlName="averageRating" type="number"  #averageRating>
+            </div>
+
+            <div>
+                <p>
+                   <button class="button"  id="new" (click)="addNewGame(name.value, description.value, urlImage.value, unitPrice.value, stock.value, averageRating.value )">Create</button>
+                </p>
+            </div>
+
+        </div>
+      </form>
+    </div>
+</div>
