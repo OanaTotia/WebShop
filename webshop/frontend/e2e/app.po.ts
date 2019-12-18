@@ -17,7 +17,7 @@ export class Angular2ExamProjectPage {
   }
 
   getFirstGame(){
-    return element(by.css("div.game"));
+    return element.all(by.css("div.game")).first();
   }
 
   getDeleteButton(){
