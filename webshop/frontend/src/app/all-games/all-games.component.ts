@@ -1,11 +1,11 @@
 import { Game } from './../game';
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { RouterModule, Routes, RouterOutlet } from '@angular/router';
+//import { NgForm } from '@angular/forms';
+//import { RouterModule, Routes, RouterOutlet } from '@angular/router';
 import { Router} from '@angular/router';
-import { FormGroup, ReactiveFormsModule, FormBuilder, Validators,FormControl } from '@angular/forms';
+//import { FormGroup, ReactiveFormsModule, FormBuilder, Validators,FormControl } from '@angular/forms';
 import { GameService } from '../game.service';
-import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
+//import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'all-games',

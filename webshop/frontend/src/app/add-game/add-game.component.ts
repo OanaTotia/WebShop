@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GameService} from '../game.service';
 import { FormGroup, ReactiveFormsModule, FormBuilder, Validators,FormControl } from '@angular/forms';
+
 @Component({
   selector: 'add-game',
   templateUrl: './add-game.component.html',
@@ -18,13 +19,12 @@ public newGameForm: FormGroup;
       'description': [''],
       'urlImage':[''],
       'unitPrice':[''],
-      'stock':[''],
-      'averageRating':['']
+      'stock':['']
     })
   }
 
-  addNewGame(name, description, urlImage, unitPrice, stock, averageRating){
-    this.gameService.addGame(name, description, urlImage, unitPrice, stock, averageRating);
+  addNewGame(name, description, urlImage, unitPrice, stock){
+    this.gameService.addGame(name, description, urlImage, unitPrice, stock, 0);
   }
 
   ngOnInit() {
