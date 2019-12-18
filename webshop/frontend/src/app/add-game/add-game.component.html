@@ -1,14 +1,11 @@
 <div class="addGameContainer">
     
-    
         <div class="box">
            <div class="box-body"></div>
              <div class="box-footer">
                   <div class="name"></div>
              </div>
         </div> 
-
-
 
     <div id="gameProperties">
         
@@ -35,7 +32,7 @@
 
             <div>
                 <label  class="field">Unit Price</label>
-                <input class="inputRrice" formControlName="unitPrice" type="number"  #unitPrice>
+                <input class="inputUnitPrice" formControlName="unitPrice" type="number"  #unitPrice>
             </div>
 
             <div>
@@ -44,13 +41,8 @@
             </div>
 
             <div>
-                <label  class="field">Average Rating</label>
-                <input class="inputStock" formControlName="averageRating" type="number"  #averageRating>
-            </div>
-
-            <div>
                 <p>
-                   <button class="button"  id="new" (click)="addNewGame(name.value, description.value, urlImage.value, unitPrice.value, stock.value, averageRating.value )">Create</button>
+                   <button class="button"  id="new" (click)="addNewGame(name.value, description.value, urlImage.value, unitPrice.value, stock.value )">Create</button>
                 </p>
             </div>
 
