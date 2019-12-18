@@ -15,6 +15,6 @@
     "@angular/http": "^7.2.15",
     "cors": "^2.8.5",
     "express": "^4.15.3",
-    "mongoose": "^4.10.2"
+    "mongoose": "^5.7.5"
   }
 }
